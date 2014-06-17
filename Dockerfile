@@ -35,6 +35,7 @@ WORKDIR /
 
 #Install gramps
 RUN zypper refresh && \
+	zypper install -y python-xml && \
 	zypper install -y gramps
 
 #****************************************************
